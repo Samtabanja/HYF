@@ -1,0 +1,60 @@
+1- to create a hidden file:
+
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn
+$ touch .Sam.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn
+$ ls -a
+./  ../  .Sam.txt
+
+
+
+2-to creat nested directorie 
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn
+$ mkdir -p sam/is/home/alone
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn
+$ ls
+sam/
+
+3- to go inside the  directories
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn
+$ cd sam/is/home/alone
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ touch sam1.txt
+
+
+4-to add a text inside  a created file . 
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ echo "test"> sam1.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ echo "another test">> sam1.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ wc -c sam1.txt
+18 sam1.txt
+
+
+
+
+to add a text inside  a created file but wiuthout a newline .
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ echo -n "without a new line">>sam1.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+$ echo -n "output">>sam1.txt
+
+
+$ cat sam1.txt
+test
+another test
+without a new lineoutput
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/nthn/sam/is/home/alone
+
+

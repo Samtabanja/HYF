@@ -1,0 +1,92 @@
+create a directory. Enter a directory. Create an empty file named blank.
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop
+$ mkdir homework3
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop
+$ cd homework3
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ touch blank
+
+
+
+Then write the content "Hello" five times to the file greetings.txt.
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ for i in {1..5} ; do echo "hello" >> greetings.txt ; done
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ cat greetings.txt
+hello
+hello
+hello
+hello
+hello
+
+
+Then copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt.
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ for i in 1 2 3 4 5 ; do cp greetings.txt "$i.txt" ; done
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ cat 1.txt
+hello
+hello
+hello
+hello
+hello
+
+
+3. Then write the text "cat" to pets.txt
+   Then append the text "dog" to pets.txt
+   Then append the text "hamster" to pets.txt
+
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "cat" > pets.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "dog" >> pets.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "hamster" >> pets.txt
+
+
+
+
+
+4. Then write the text "cat" to commands.txt
+   Then append the text "ls" to commands.txt
+   Then append the text "pwd" to commands.txt
+
+
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "cat" > commands.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "ls" >> commands.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ echo "pwd" >> commands.txt
+
+
+
+5. Then find unique strings from these two files pets.txt and commands.txt
+   and store the unique strings in lovelyCommands.txt
+
+
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ sort -u commands.txt pets.txt > lovelyCommands.txt
+
+Samo@DESKTOP-9OF8KCH MINGW64 ~/Desktop/homework3
+$ cat lovelyCommands.txt
+cat
+dog
+hamster
+ls
+pwd
+
